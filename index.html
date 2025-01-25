@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(200deg, #009999, #666699);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 1em 0;
+            background-color: rgb(33, 32, 32);
+            text-align: center;
+            color: white;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #eeeeee;
+            color: black;
+        }
+
+        .navbar ul li a:active {
+            background-color: rgb(234, 249, 184);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            background-color: rgb(33, 32, 32);
+            color: white;
+            padding: 2em 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 1em;
+            margin: 2em auto;
+            max-width: 90%;
+            background-color: rgb(232, 223, 223);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: rgb(4, 10, 52);
+        }
+
+        .section ul {
+            padding-left: 1.5em;
+        }
+
+        .profile-pic {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .profile-pic img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background-color: rgb(33, 32, 32);
+            color: white;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            .navbar ul {
+                gap: 50px;
+            }
+
+            .profile-pic img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .section {
+                max-width: 700px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section {
+                max-width: 900px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Hobbies">Hobbies</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>MUHAMMAD IBRAHIM</h1>
+    </header>
+
+    <h1 style="text-align: center; color: white; font-weight: bolder;">Profile Picture</h1>
+
+    <section class="profile-pic">
+        <img src="karam.jpeg" alt="Profile Picture">
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="About" class="section">
+        <h2>About Me</h2>
+        <p>"I am a Computer Science student passionate about technology and innovation. I enjoy acquiring diverse
+            skills, including programming, web development, graphic design, and problem-solving. My curiosity drives
+            me to explore and master new challenges."</p>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="Hobbies" class="section">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Cricket</li>
+            <li>Learn new skills</li>
+            <li>Traveling</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Designing</li>
+            <li>Teaching</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: ibrahimshar1516@gmail.com</p>
+        <p>Phone: 03064845988</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 M: Ibrahim. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
